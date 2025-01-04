@@ -1,0 +1,2142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TR655PK5");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta
+      name="google-site-verification"
+      content="NSLU2hVHsVgy1HBgqVtDOT0QczavXOZCEEICvI-bMIw"
+    />
+    <link rel="canonical" href="https://lookflydesk.com/" />
+    <meta
+      name="description"
+      content="The best and cheapest flight deals in the USA with unbeatable prices on domestic and international flights like USA, Canada, Europe ."
+    />
+    <title>Flight Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+    <script src="/js/global.js"></script>
+    <style>
+      .dm-sans {
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+
+    <!-- Include Swiper.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md fixed top-0 w-full z-10">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-blue-600">
+          <a href="/">
+            <img class="w-28" src="/images/logo/logo.png" alt="lookflydesk"
+          /></a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 relative">
+          <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="/about-us" class="text-gray-600 hover:text-blue-600"
+            >About Us</a
+          >
+          <a href="/cheap-flights" class="text-gray-600 hover:text-blue-600"
+            >Cheap Flight</a
+          >
+
+          <!-- Flight Deals Dropdown -->
+          <div class="dropdown flex">
+            <a href="/Flights-deal">
+              <button class="text-gray-600 hover:text-blue-600">
+                Flights Deal
+              </button></a
+            >
+            <button class="relative">
+              <svg
+                onclick="toggleDropdown('flight-deals')"
+                class="ml-1 w-4 h-4 hover:text-blue-700"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown Menu -->
+            <div
+              id="flight-deals"
+              class="absolute inset hidden bg-white shadow-md rounded-md mt-8 w-40"
+            >
+              <div class="relative subdropdown">
+                <a
+                  href="/flights-deal/USA"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  USA</a
+                >
+                <div
+                  class="subdropdown-menu absolute w-42 items-center pb-2 px-4 mt-0 -right-24 text-gray-500 py-2 ml-4 bg-white top-0 shadow-lg rounded-md"
+                >
+                  <a
+                    class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/new-york"
+                    >New York</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/los-angeles"
+                    >Los-Angeles</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/chicago"
+                    >Chicago</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/san-francisco"
+                    >San-Francisco</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/mexico"
+                    >Mexico</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/atlanta"
+                    >Atlanta</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/dallas"
+                    >Dallas</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/miami"
+                    >Miami</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/los-angeles"
+                    >Los Angeles</a
+                  >
+                </div>
+              </div>
+              <div class="relative subdropdown">
+                <a
+                  href="/flights-deal/Canada"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Canada</a
+                >
+                <div
+                  class="subdropdown-menu absolute w-42 items-center pb-2 px-4 mt-0 -right-24 text-gray-500 py-2 ml-4 bg-white top-0 shadow-lg rounded-md"
+                >
+                  <a
+                    class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/canada/toronto"
+                    >Toronto</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/canada/vancouver"
+                    >Vancouver</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/canada/ottawa"
+                    >Ottawa</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/canada/quebec-city"
+                    >Quebec-City</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/canada/orlando"
+                    >Orlando</a
+                  >
+                  <br />
+                </div>
+              </div>
+              <div class="relative subdropdown">
+                <a
+                  href="/flights-deal/Europe"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Europe</a
+                >
+                <div
+                  class="subdropdown-menu absolute w-42 items-center pb-2 px-4 mt-0 -right-24 text-gray-500 py-2 ml-4 bg-white top-0 shadow-lg rounded-md"
+                >
+                  <a
+                    class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/europe/barcelona"
+                    >Barcelona</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/europe/paris"
+                    >Paris</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/europe/london"
+                    >london</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/europe/berlin"
+                    >Berlin</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/europe/amsterdam"
+                    >Amsterdam</a
+                  >
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- International Carriers Dropdown -->
+          <div class="relative dropdown">
+            <a
+              class="text-gray-600 hover:text-blue-600 inline-flex items-center"
+              onclick="toggleDropdown('international-carriers')"
+            >
+              International Carriers
+              <svg
+                class="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
+            <!-- Dropdown Menu -->
+            <div
+              id="international-carriers"
+              class="absolute left-0 hidden bg-white shadow-md rounded-md mt-2 w-48"
+            >
+              <a
+                href="/allegiant-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Allegiant Airline</a
+              >
+              <a
+                href="/lufthansa"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Lufthansa</a
+              >
+              <a
+                href="/american-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >American Airline</a
+              >
+              <a
+                href="/air-canada"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Air canada
+              </a>
+              <a
+                href="/frontier-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Frontier Airline</a
+              >
+              <a
+                href="/alaska-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Alaska Airline</a
+              >
+              <a
+                href="/united-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >United Airline</a
+              >
+              <a
+                href="/spirit-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Spirit Airline</a
+              >
+              <a
+                href="/delta-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Delta Airline</a
+              >
+              <a
+                href="/jetblue"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Jetblue</a
+              >
+              <a
+                href="/southwest-airlines"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Southwest Airline</a
+              >
+            </div>
+          </div>
+
+          <a href="/contact-us" class="text-gray-600 hover:text-blue-600"
+            >Contact Us</a
+          >
+        </nav>
+
+        <!-- Contact Number and Button -->
+        <div class="hidden md:flex items-center space-x-4">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <span class="text-gray-600">(866) 460-3456</span>
+          <a
+            href="tel:+18664603456"
+            class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition relative"
+          >
+            <span
+              class="absolute inset w-16 h-8 bottom-1 rounded-full bg-blue-500 opacity-75 animate-ping"
+            ></span>
+            Call Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="block md:hidden text-gray-600 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <nav class="flex flex-col p-4 space-y-2">
+          <a href="/" class="text-gray-600 hover:text-blue-600">Home</a>
+          <a href="/about-us" class="text-gray-600 hover:text-blue-600"
+            >About US</a
+          >
+          <div class="relative dropdown">
+            <a
+              onclick="toggleDropdown('main-dropdown')"
+              class="text-gray-600 hover:text-blue-600 inline-flex items-center"
+            >
+              Flights Deal
+              <svg
+                class="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
+
+            <!-- Main Dropdown -->
+            <div
+              id="main-dropdown"
+              class="bg-white shadow-md rounded-md mt-2 w-48 hidden"
+            >
+              <div>
+                <a
+                  href="javascript:void(0)"
+                  onclick="toggleDropdown('usa-dropdown')"
+                  class="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  USA
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+                <div
+                  id="usa-dropdown"
+                  class="bg-white shadow-md rounded-md mt-2 w-48 hidden px-4"
+                >
+                  <a
+                    class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/new-york"
+                    >New York</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/los-angeles"
+                    >Los-Angeles</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/chicago"
+                    >Chicago</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/san-francisco"
+                    >San-Francisco</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/mexico"
+                    >Mexico</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/atlanta"
+                    >Atlanta</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/dallas"
+                    >Dallas</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/miami"
+                    >Miami</a
+                  >
+                  <br />
+                  <a
+                    class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                    href="/flights-deal/usa/los-angeles"
+                    >Los Angeles</a
+                  >
+                </div>
+              </div>
+
+              <a
+                href="javascript:void(0)"
+                class="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                onclick="toggleDropdown('canada-dropdown')"
+              >
+                Canada
+                <svg
+                  class="ml-1 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              <div
+                id="canada-dropdown"
+                class="bg-white shadow-md rounded-md mt-2 w-48 hidden px-4"
+              >
+                <a
+                  class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/canada/toronto"
+                  >Toronto</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/canada/vancouver"
+                  >Vancouver</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/canada/ottawa"
+                  >Ottawa</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/canada/quebec-city"
+                  >Quebec-City</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/canada/orlando"
+                  >Orlando</a
+                >
+                <br />
+              </div>
+
+              <a
+                href="javascript:void(0)"
+                class="flex justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                onclick="toggleDropdown('europe-dropdown')"
+              >
+                Europe
+                <svg
+                  class="ml-1 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </a>
+              <div
+                id="europe-dropdown"
+                class="bg-white shadow-md rounded-md mt-2 w-48 hidden px-4"
+              >
+                <a
+                  class="font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/europe/barcelona"
+                  >Barcelona</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/europe/paris"
+                  >Paris</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/europe/london"
+                  >london</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/europe/berlin"
+                  >Berlin</a
+                >
+                <br />
+                <a
+                  class="mt-6 font-sans hover:text-blue-500 text-sm text-gray-700"
+                  href="/flights-deal/europe/amsterdam"
+                  >Amsterdam</a
+                >
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Function to toggle dropdown visibility
+            function toggleDropdown(dropdownId) {
+              const dropdown = document.getElementById(dropdownId);
+              dropdown.classList.toggle("hidden");
+            }
+          </script>
+
+          <a href="#" class="text-gray-600 hover:text-blue-600">Cheap Flight</a>
+          <div>
+            <a
+              onclick="toggleDropdown('mobile-international-dropdown')"
+              class="text-gray-600 hover:text-blue-600 inline-flex items-center"
+              >International Carriers
+              <svg
+                class="ml-1 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+              <!-- internation Main Dropdown -->
+              <div
+                id="mobile-international-dropdown"
+                class="bg-white shadow-md rounded-md mt-2 w-48 hidden"
+              >
+                <a
+                  href="/allegiant-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Allegiant Airline</a
+                >
+                <a
+                  href="/lufthansa"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Lufthansa</a
+                >
+                <a
+                  href="/american-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >American Airline</a
+                >
+                <a
+                  href="/air-canada"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Air canada Airline</a
+                >
+                <a
+                  href="/frontier-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Frontier Airline</a
+                >
+                <a
+                  href="/alaska-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Alaska Airline</a
+                >
+                <a
+                  href="/united-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >United Airline</a
+                >
+                <a
+                  href="/spirit-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Spirit Airline</a
+                >
+                <a
+                  href="/delta-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Delta Airline</a
+                >
+                <a
+                  href="/jetblue"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Jetblue Airline</a
+                >
+                <a
+                  href="/southwest-airlines"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Southwest Airline</a
+                >
+              </div>
+            </a>
+          </div>
+          <a href="/contact-us" class="text-gray-600 hover:text-blue-600"
+            >Contact Us</a
+          >
+          <a
+            href="#"
+            class="bg-blue-600 text-white text-center py-2 rounded-md hover:bg-blue-700 transition"
+            >Call Now</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- banner -->
+
+    <section>
+      <div class="bg-cover bg-center flex justify-center pt-[96px]">
+        <!-- <img class="w-full" src="/images/homeBanner.jpg" alt="" /> -->
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover"
+          src="/Video/Final banner 2.mp4"
+        ></video>
+      </div>
+    </section>
+    <!-- Promotion Section -->
+    <section class="text-center py-10 bg-blue-900 pt-28">
+      <h1 class="sm:text-4xl text-2xl font-bold text-white mb-2 dm-sans">
+        Up To 80% Off International & Business Class Flights
+      </h1>
+      <p class="text-lg text-white dm-sans">
+        Black Friday deals are now live! Save on luxury flights during all of
+        December and January.<br />Get your free quote or call now to save.
+      </p>
+    </section>
+
+    <section class="py-10 bg-gray-200 text-black">
+      <div class="container mx-auto px-4">
+        <div class="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg">
+          <!-- Voucher Information -->
+          <div class="text-center mb-6">
+            <p>CALL NOW TO SAVE $100</p>
+            <p class="font-bold text-xl">VOUCHER CODE TBC70G</p>
+          </div>
+
+          <!-- Editable Options -->
+          <div
+            class="flex flex-col sm:flex-row sm:space-x-4 items-center bg-gray-100 p-4 rounded-lg text-gray-700 shadow-md mb-6"
+          >
+            <select
+              class="w-full sm:w-auto bg-white text-gray-700 p-2 rounded-md mb-4 sm:mb-0"
+              aria-label="Trip Type"
+            >
+              <option value="Round-Trip">Round-Trip</option>
+              <option value="One-Way">One-Way</option>
+              <option value="Multi-City">Multi-City</option>
+            </select>
+            <select
+              class="w-full sm:w-auto bg-white text-gray-700 p-2 rounded-md mb-4 sm:mb-0"
+              aria-label="Passenger Count"
+            >
+              <option value="1">1 Passenger</option>
+              <option value="2">2 Passengers</option>
+              <option value="3">3 Passengers</option>
+              <option value="4">4 Passengers</option>
+              <option value="5">5 Passengers</option>
+              <option value="6">6 Passengers</option>
+            </select>
+            <select
+              class="w-full sm:w-auto bg-white text-gray-700 p-2 rounded-md"
+              aria-label="Travel Class"
+            >
+              <option value="Business">Business</option>
+              <option value="Economy">Economy</option>
+              <option value="First">First Class</option>
+            </select>
+          </div>
+
+          <!-- From and To Fields -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="From"
+              class="w-full p-3 rounded-md text-gray-700 border border-gray-300 focus:ring focus:ring-orange-300"
+            />
+            <input
+              type="text"
+              placeholder="To"
+              class="w-full p-3 rounded-md text-gray-700 border border-gray-300 focus:ring focus:ring-orange-300"
+            />
+          </div>
+
+          <!-- Date Fields -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <input
+              type="date"
+              placeholder="Depart"
+              class="w-full p-3 rounded-md text-gray-700 border border-gray-300 focus:ring focus:ring-orange-300"
+            />
+            <input
+              type="date"
+              placeholder="Return"
+              class="w-full p-3 rounded-md text-gray-700 border border-gray-300 focus:ring focus:ring-orange-300"
+            />
+          </div>
+
+          <!-- Call to Action Button -->
+          <button
+            class="w-full p-3 bg-orange-500 text-white font-bold rounded-md hover:bg-orange-600 transition-colors relative flex justify-center"
+          >
+            <a href="tel:+18664603456">
+              <span
+                class="absolute inset w-28 h-12 bottom-1 rounded-full bg-orange-500 opacity-75 animate-ping"
+              ></span
+            ></a>
+            GET A FREE QUOTE!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-10 bg-white">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2 dm-sans">
+        International Flight Deals.
+        <br />All Major Airlines.
+      </h1>
+      <p class="text-lg text-gray-600 dm-sans">
+        The lowest-priced luxury airfare on the market. Get the best flight
+        deals on business class tickets, first class flights, and luxury airfare
+        when you fly international. <br />Book now and save with Top Business
+        Class.
+      </p>
+    </section>
+
+    <section
+      class="text-center py-10 px-4 py-20 bg-center bg-contain bg-no-repeat"
+      style="background-image: url(/images/Banner\ USA\ Europe\ Canada.jpg)"
+    >
+      <div>
+        <div>
+          <div
+            class="bg-blue-900 sm:w-[450px] py-8 px-4 rounded-lg shadow-lg flex justify-between"
+          >
+            <div class="text-xl font-bold text-white"><h2>EUROPE</h2></div>
+            <div class="text-xl font-semibold text-orange-500">
+              <h2>FROM $2,406</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-end">
+          <div
+            class="bg-blue-900 sm:w-[450px] py-8 px-4 rounded-lg shadow-lg flex justify-between"
+          >
+            <div class="text-xl font-bold text-white"><h2>USA</h2></div>
+            <div class="text-xl font-semibold text-orange-500">
+              <h2>FROM $2,106</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <div
+            class="bg-blue-900 sm:w-[450px] py-8 px-4 rounded-lg shadow-lg flex justify-between"
+          >
+            <div class="text-xl font-bold text-white"><h2>Canada</h2></div>
+            <div class="text-xl font-semibold text-orange-500">
+              <h2>FROM $1,406</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Top Travel Deals -->
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Top Travel Deals</h2>
+
+        <!-- Filter Buttons and Class Dropdown -->
+        <div class="flex flex-wrap justify-between items-center mb-8 gap-4">
+          <!-- Continent Filter Buttons -->
+          <div class="flex space-x-4">
+            <button
+              onclick="filterDeals('Europe', this)"
+              class="filter-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300"
+            >
+              Europe
+            </button>
+            <button
+              onclick="filterDeals('USA', this)"
+              class="filter-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300"
+            >
+              USA
+            </button>
+            <button
+              onclick="filterDeals('Canada', this)"
+              class="filter-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300"
+            >
+              Canada
+            </button>
+          </div>
+
+          <!-- Class Dropdown -->
+          <div class="w-full sm:w-auto">
+            <select
+              id="class-filter"
+              class="bg-white border border-gray-300 text-gray-700 p-2 rounded-md w-full sm:w-auto"
+              aria-label="Class Type"
+              onchange="filterDealsByClass(this.value)"
+            >
+              <option value="All">All Classes</option>
+              <option value="Business">Business Class</option>
+              <option value="Economy">Economy</option>
+              <option value="First">First Class</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Travel Deals Grid -->
+        <div
+          id="deals-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Deal Card Template -->
+          <div class="deal-card" data-continent="Europe" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/europe/barcelona">
+                <img
+                  src="https://www.seyatra.com/wp-content/uploads/2024/03/Barselona-Gezi-Rehberi-Unutulmaz-Barselona-Seyahat.webp"
+                  alt="Toronto"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/europe/barcelona">
+                  <h3 class="text-xl font-bold mb-1">Barcelona</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Europe" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/europe/paris">
+                <img
+                  src="https://img.static-kl.com/images/media/71BBFEDE-473D-4F4E-82522A2197279310"
+                  alt="Paris"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/europe/paris">
+                  <h3 class="text-xl font-bold mb-1">Paris</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Europe" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/europe/london">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg/900px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall_%28cropped%29.jpg"
+                  alt="London"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/europe/london">
+                  <h3 class="text-xl font-bold mb-1">London</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Europe" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/europe/berlin">
+                <img
+                  src="https://cdn.britannica.com/49/179449-138-9F4EC401/Overview-Berlin.jpg?w=800&h=450&c=crop"
+                  alt="Berlin"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/europe/berlin">
+                  <h3 class="text-xl font-bold mb-1">Berlin</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Europe" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/europe/amsterdam">
+                <img
+                  src="https://t3.ftcdn.net/jpg/02/61/71/10/360_F_261711068_tQvtEmUgmFE3tiGVEuHplbdP56XE3Ghm.jpg"
+                  alt="Amsterdam"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/europe/amsterdam">
+                  <h3 class="text-xl font-bold mb-1">Amsterdam</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <!-- /// -->
+
+          <div class="deal-card" data-continent="USA" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/usa/new-york">
+                <img
+                  src="https://i.natgeofe.com/k/5b396b5e-59e7-43a6-9448-708125549aa1/new-york-statue-of-liberty.jpg"
+                  alt="Gothenburg"
+                  class="w-full h-48 object-cover"
+                />
+              </a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/usa/new-york">
+                  <h3 class="text-xl font-bold mb-1">New York</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="USA" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/usa/los-angeles">
+                <img
+                  src="https://static.independent.co.uk/2024/09/26/15/iStock-1463288473-1.jpg"
+                  alt="Gothenburg"
+                  class="w-full h-48 object-cover"
+                />
+              </a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/usa/los-angeles">
+                  <h3 class="text-xl font-bold mb-1">Los-Angeles</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="USA" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/usa/chicago">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Chicago_River_ferry_b.jpg"
+                  alt="Gothenburg"
+                  class="w-full h-48 object-cover"
+                />
+              </a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/usa/chicago">
+                  <h3 class="text-xl font-bold mb-1">Chicago</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="USA" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/usa/san-francisco">
+                <img
+                  src="https://www.sftravel.com/sites/default/files/styles/hero/public/2022-10/painted-ladies-city-skyline-twilight.jpg.webp?itok=MVU3kPdc"
+                  alt="Gothenburg"
+                  class="w-full h-48 object-cover"
+                />
+              </a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/usa/san-francisco">
+                  <h3 class="text-xl font-bold mb-1">San-Francisco</h3></a
+                >
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="USA" data-class="Business">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/usa/mexico">
+                <img
+                  src="https://cdn.britannica.com/14/193614-050-96B51738/Metropolitan-Cathedral-Mexico-City.jpg"
+                  alt="Gothenburg"
+                  class="w-full h-48 object-cover"
+                />
+              </a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/usa/mexico">
+                  <h3 class="text-xl font-bold mb-1">Mexico</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- //// -->
+          <div class="deal-card" data-continent="Canada" data-class="Economy">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/canada/toronto">
+                <img
+                  src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/516000/516652-nathan-phillips-square.jpg"
+                  alt="Toronto"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/canada/toronto">
+                  <h3 class="text-xl font-bold mb-1">Toronto</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Canada" data-class="Economy">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/canada/vancouver">
+                <img
+                  src="https://images.actiontourguide.com/wp-content/uploads/2023/12/16114522/Beautiful-aerial-view-of-downtown-Vancouver-skyline.jpg"
+                  alt="vancouver"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/canada/vancouver">
+                  <h3 class="text-xl font-bold mb-1">Vancouver</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Canada" data-class="Economy">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/canada/ottawa">
+                <img
+                  src="https://www.the-travel-box.com/wp-content/uploads/2021/07/DSC_0273_Fotor-parli_6.jpg"
+                  alt="Ottawa"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/canada/ottawa">
+                  <h3 class="text-xl font-bold mb-1">Ottawa</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Canada" data-class="Economy">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/canada/quebec-city">
+                <img
+                  src="https://www.quebec-cite.com/sites/otq/files/styles/cinema/public/media/image/Chateau_Frontenac_hiver.png?itok=hYeQvNo8"
+                  alt="Quebec-City"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/canada/quebec-city">
+                  <h3 class="text-xl font-bold mb-1">Quebec-City</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <div class="deal-card" data-continent="Canada" data-class="Economy">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <a href="/flights-deal/canada/orlando">
+                <img
+                  src="https://cdn.britannica.com/07/201607-050-0B5774CB/Orlando-Florida-aerial-cityscape-towards-Eola-Lake.jpg"
+                  alt="Quebec-City"
+                  class="w-full h-48 object-cover"
+              /></a>
+              <div class="p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-green-500 font-bold">49% Off</span>
+                  <p class="line-through text-gray-500">$5877</p>
+                </div>
+                <a href="/flights-deal/canada/orlando">
+                  <h3 class="text-xl font-bold mb-1">Orlando</h3>
+                </a>
+                <p class="text-gray-500">Business Class</p>
+                <p class="text-green-500 font-bold">$2997</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat Deal Cards as needed -->
+        </div>
+        <div class="gap-x-8 flex justify-center">
+          <a href="tel:+18664603456"
+            ><button
+              class="mt-6 p-3 bg-green-500 text-white font-bold rounded-md hover:bg-green-600 items-center relative flex justify-center"
+            >
+              <span
+                class="absolute inset w-16 h-10 bottom-2 rounded-full bg-green-500 opacity-75 animate-ping"
+              ></span>
+              Make A Call
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+      function filterDeals(continent, button) {
+        // Highlight the active button
+        document.querySelectorAll(".filter-button").forEach((btn) => {
+          btn.classList.remove("active", "bg-black", "text-white");
+          btn.classList.add("bg-gray-200");
+        });
+        button.classList.add("active", "bg-black", "text-white");
+
+        // Filter by continent and class
+        const selectedClass = document.getElementById("class-filter").value;
+        document.querySelectorAll(".deal-card").forEach((card) => {
+          const matchesContinent =
+            card.getAttribute("data-continent") === continent;
+          const matchesClass =
+            card.getAttribute("data-class") === selectedClass ||
+            selectedClass === "All";
+
+          card.style.display =
+            matchesContinent && matchesClass ? "block" : "none";
+        });
+      }
+
+      function filterDealsByClass(classType) {
+        // Get the active continent
+        const activeButton = document.querySelector(".filter-button.active");
+        const activeContinent = activeButton
+          ? activeButton.textContent.trim()
+          : "Europe";
+
+        // Filter by continent and class
+        document.querySelectorAll(".deal-card").forEach((card) => {
+          const matchesContinent =
+            card.getAttribute("data-continent") === activeContinent;
+          const matchesClass =
+            card.getAttribute("data-class") === classType ||
+            classType === "All";
+
+          card.style.display =
+            matchesContinent && matchesClass ? "block" : "none";
+        });
+      }
+
+      // Initial load to show only 'Europe' deals in Business Class
+      window.onload = function () {
+        const initialButton = document.querySelector(".filter-button");
+        initialButton.classList.add("active", "bg-black", "text-white");
+        filterDeals("Europe", initialButton);
+      };
+    </script>
+
+    <section class="text-center py-10 bg-white">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2 dm-sans">
+        Why LookFlydesk?
+      </h1>
+      <p class="text-lg text-gray-600 dm-sans">
+        We are your personal travel concierge dedicated to saving you time and
+        money on round-trip international business class flights.
+      </p>
+      <div class="flex justify-evenly py-12">
+        <div class="text-center block jus">
+          <div class="flex justify-center mb-4">
+            <img
+              class="size-16"
+              src="https://www.topbusinessclass.com/images/tbc-benefits-1.png"
+              alt=""
+            />
+          </div>
+          <p>Save 40-70% off flights on all major carriers</p>
+        </div>
+        <div class="text-center block jus">
+          <div class="flex justify-center mb-4">
+            <img
+              class="size-16"
+              src="https://www.topbusinessclass.com/images/tbc-benefits-2.png"
+              alt=""
+            />
+          </div>
+          <p>Get the Guaranteed Best Price available for your trip</p>
+        </div>
+        <div class="text-center block jus">
+          <div class="flex justify-center mb-4">
+            <img
+              class="size-16"
+              src="https://www.topbusinessclass.com/images/tbc-benefits-3.png"
+              alt=""
+            />
+          </div>
+          <p>Dedicated Travel Expert available by phone or email</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center py-10 bg-gray-100">
+      <div class="p-8">
+        <div
+          class="bg-center bg-cover h-64 rounded-lg shadow-lg"
+          style="
+            background-image: url(https://airindia.scene7.com/is/image/airindia/1920x750-Web-Vistara_merger);
+          "
+        ></div>
+      </div>
+      <div class="gap-x-8">
+        <button
+          class="mt-6 p-3 bg-orange-500 text-white font-bold rounded-md hover:bg-orange-600 relative"
+        >
+          <span
+            class="absolute inset w-28 h-12 bottom-1 left-8 rounded-full bg-orange-500 opacity-75 animate-ping"
+          ></span>
+          GET A FREE QUOTE!
+        </button>
+      </div>
+    </section>
+
+    <section class="text-center py-10 bg-white">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2 dm-sans">
+        Speak With An Expert Travel Manager
+      </h1>
+      <p class="text-lg text-gray-600 dm-sans">
+        Our team of advisors is available 24/7 to help you find the lowest
+        prices for your next flight!
+      </p>
+
+      <p class="text-lg text-gray-600 dm-sans">
+        Call Now To Save $100 On Your Flight!
+      </p>
+      <div class="gap-x-8">
+        <button
+          class="mt-6 p-3 bg-green-500 text-white font-bold rounded-md hover:bg-green-600 items-center relative justify-center"
+        >
+          <a href="tel:+18664603456">
+            <span
+              class="absolute inset w-32 bottom-2 h-8 rounded-full bg-green-500 opacity-75 animate-ping"
+            ></span>
+            Call Us for Query</a
+          >
+        </button>
+      </div>
+      <div class="container mx-auto p-6 max-w-lg bg-black mt-6">
+        <!-- From and To fields -->
+        <div class="flex space-x-2">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+        </div>
+        <br />
+        <!-- From and To fields -->
+        <div class="flex space-x-2">
+          <input
+            type="text"
+            placeholder="From"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+          <input
+            type="text"
+            placeholder="To"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+        </div>
+
+        <!-- Date fields -->
+        <div class="flex space-x-2 mt-4">
+          <input
+            type="date"
+            placeholder="Depart"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+          <input
+            type="date"
+            placeholder="Return"
+            class="w-full p-3 rounded-md text-gray-700"
+          />
+        </div>
+
+        <!-- Call to Action Button -->
+        <button
+          class="w-full mt-6 p-3 bg-orange-500 text-white font-bold rounded-md hover:bg-orange-600 relative flex justify-center"
+        >
+          <span
+            class="absolute inset w-64 bottom-2 h-8 rounded-full bg-orange-300 opacity-75 animate-ping"
+          ></span>
+          Submit
+        </button>
+      </div>
+    </section>
+    <!-- testimonial -->
+
+    <section class="bg-gray-100">
+      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2
+          class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+        >
+          Read trusted reviews from our customers
+        </h2>
+
+        <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt=""
+                src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D"
+                class="size-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  Paul Star
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              "LookFlyDesk made my travel experience so seamless! The interface
+              was incredibly user-friendly, and I found amazing deals on flights
+              that I couldn’t find elsewhere. The entire booking process took
+              just minutes, and the customer support team was there to answer my
+              questions promptly. I’ll definitely be booking my future trips
+              through LookFlyDesk!"
+            </p>
+          </blockquote>
+
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbiUyMGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D"
+                class="size-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  James Rodriguez
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              "I was initially skeptical about trying a new flight booking
+              platform, but LookFlyDesk exceeded my expectations. They offer
+              competitive prices and a wide range of flight options. The
+              real-time updates and quick confirmations gave me peace of mind.
+              Highly recommend it to frequent travelers!"
+            </p>
+          </blockquote>
+
+          <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+            <div class="flex items-center gap-4">
+              <img
+                alt=""
+                src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lbnNjaHxlbnwwfHwwfHx8MA%3D%3D"
+                class="size-14 rounded-full object-cover"
+              />
+
+              <div>
+                <div class="flex justify-center gap-0.5 text-green-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-0.5 text-lg font-medium text-gray-900">James.M</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-700">
+              "LookFlyDesk is a game-changer for flight bookings! Not only did I
+              find a cheaper flight than I was expecting, but the platform was
+              also super intuitive to use. The search filters helped me tailor
+              my results perfectly. It saved me so much time and money.
+              Absolutely love it!"
+            </p>
+          </blockquote>
+        </div>
+      </div>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </section>
+
+    <section class="bg-white">
+      <div class="flex justify-center">
+        <img class="w-full" src="/images/Page banner.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="bg-gray-700 text-white py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 dm-sans">
+          Stay Updated with Our Travel Deals
+        </h2>
+        <p class="mb-6">
+          Subscribe to receive exclusive offers and travel tips right to your
+          inbox.
+        </p>
+        <form class="flex justify-center">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="p-3 rounded-l-md focus:outline-none w-1/3"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-white text-blue-500 px-6 py-3 rounded-r-md font-semibold hover:bg-gray-100"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Popup Ad -->
+    <div
+      id="popup"
+      class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden z-50"
+    >
+      <div class="bg-white rounded-lg shadow-lg max-w-sm w-full p-6">
+        <!-- Popup Content -->
+        <div class="text-center">
+          <div class="flex justify-end mb-2">
+            <button
+              onclick="closePopup()"
+              class="text-black hover:text-gray-700 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <form class="w-full max-w-md bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">
+              Get In Touch wit Us
+            </h2>
+
+            <!-- Name -->
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                class="w-full mt-1 p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                class="w-full mt-1 p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-4">
+              <label
+                for="number"
+                class="block text-sm font-medium text-gray-700"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="Enter your phone number"
+                required
+                class="w-full mt-1 p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <!-- City -->
+            <div class="mb-4">
+              <label for="city" class="block text-sm font-medium text-gray-700"
+                >City You Live In</label
+              >
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter your city"
+                required
+                class="w-full mt-1 p-2 border rounded focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full py-2 px-4 bg-blue-900 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript to Handle Popup Display -->
+    <script>
+      // Function to show the popup
+      function showPopup() {
+        document.getElementById("popup").classList.remove("hidden");
+      }
+
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById("popup").classList.add("hidden");
+      }
+
+      // Show the popup after a delay (e.g., 3 seconds)
+      window.onload = function () {
+        setTimeout(showPopup, 3000);
+      };
+    </script>
+
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-left lg:text-left">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl fonat-semibold text-blueGray-700">
+              Let's keep in touch!
+            </h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <img src="/images/logo/logo.png" alt="lookflydesk" />
+            </div>
+            <div class="flex mt-6 lg:mb-0 mb-6">
+              <a
+                href="https://www.facebook.com/Lookflydesk"
+                class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/lookflydesk/"
+                class="bg-white text-pink-500 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/look-fly-desk/"
+                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@LookFlyDesk"
+                class="bg-white text-red-600 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                href="https://www.pinterest.com/lookflydesk/"
+                class="bg-white text-red-500 shadow-lg font-normal h-10 w-10 flex items-center justify-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                  >Quick Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/blogs"
+                      >Blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/cheap-flights"
+                      >Cheap-Flights</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/about-us"
+                      >About Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                ></span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="https://.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/terms-condition"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/privacy-policy"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="/contact-us"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-xl font-semibold mb-2"
+                  >Address</span
+                >
+
+                <span
+                  >5 Centre Avenue East, Altona, Manitoba, R0G 0B0, Canada</span
+                >
+                <li class="text-blueGray-600 font-semibold block pb-2 text-sm">
+                  <strong>Email:</strong><br />
+                  info@lookflydesk.com
+                </li>
+                <li class="text-blueGray-600 font-semibold block pb-2 text-sm">
+                  <strong>Phone:</strong><br />
+                  866-460-3456
+                </li>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-8"
+                ></span>
+
+                <span
+                  >Look Fly Desk 30 N Gould St Ste R Sheridan, WY 82801</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center"></div>
+        </div>
+      </div>
+    </footer>
+    <footer class="bg-black text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; LookFlyDesk All rights reserved.
+          <a href="https://www.risezonic.com/">Risezonic</a>
+        </p>
+      </div>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/8664603456"
+      class="fixed bottom-10 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <!-- WhatsApp Icon (Alternate SVG) -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        class="w-6 h-6"
+        viewBox="0 0 48 48"
+      >
+        <path
+          fill="#fff"
+          d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+        ></path>
+        <path
+          fill="#fff"
+          d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+        ></path>
+        <path
+          fill="#cfd8dc"
+          d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+        ></path>
+        <path
+          fill="#40c351"
+          d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+        ></path>
+        <path
+          fill="#fff"
+          fill-rule="evenodd"
+          d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </a>
+
+    <a
+      href="tel:+18664603456"
+      class="fixed bottom-32 right-5 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-500 transition animate-bounce"
+      target="_blank"
+      aria-label="Chat on call"
+    >
+      <!-- Call Icon (Alternate SVG) -->
+      <div class="w-6 h-6 flex justify-center items-center">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+    </a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TR655PK5"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

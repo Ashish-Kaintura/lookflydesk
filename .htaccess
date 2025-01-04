@@ -1,0 +1,41 @@
+RewriteEngine On
+
+# Serve HTML files without the .html extension (optional)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Begin redirections
+Redirect 301 /las-vegas https://lookflydesk.com/flights-deal/usa/las-vegas
+Redirect 301 /new-york https://lookflydesk.com/flights-deal/usa/new-york
+Redirect 301 /los-angeles https://lookflydesk.com/flights-deal/usa/los-angeles
+Redirect 301 /san-francisco https://lookflydesk.com/flights-deal/usa/san-francisco
+Redirect 301 /newark https://lookflydesk.com/flights-deal/Europe
+Redirect 301 /cancun https://lookflydesk.com/flights-deal/usa/mexico
+Redirect 301 /vancouver https://lookflydesk.com/flights-deal/canada/vancouver
+Redirect 301 /manila https://lookflydesk.com/flights-deal/Europe
+Redirect 301 /toronto https://lookflydesk.com/flights-deal/canada/toronto
+Redirect 301 /quebec https://lookflydesk.com/flights-deal/canada/quebec-city
+Redirect 301 /orlando https://lookflydesk.com/flights-deal/canada/orlando
+Redirect 301 /miami https://lookflydesk.com/flights-deal/usa/miami
+Redirect 301 /frontlier-airlines https://lookflydesk.com/frontier-airlines
+Redirect 301 /flights-deal/europe/londan https://lookflydesk.com/flights-deal/europe/london
+Redirect 301 /privacy-policy.php https://lookflydesk.com/privacy-policy
+Redirect 301 /american-airlines.php https://lookflydesk.com/american-airlines
+Redirect 301 /manila.php https://lookflydesk.com/flights-deal/Europe
+Redirect 301 /jetblue.php https://lookflydesk.com/jetblue
+Redirect 301 /cancun.php https://lookflydesk.com/flights-deal/Europe
+Redirect 301 /air-canada.php https://lookflydesk.com/air-canada
+Redirect 301 /united-airlines.php https://lookflydesk.com/united-airlines
+Redirect 301 /terms-conditions.php https://lookflydesk.com/terms-condition
+Redirect 301 /los-angeles.php https://lookflydesk.com/flights-deal/usa/los-angeles
+Redirect 301 /miami.php https://lookflydesk.com/flights-deal/Europe
+Redirect 301 /vancouver.php https://lookflydesk.com/flights-deal/Europe
+
+# New Redirection Rules (updated)
+RewriteCond %{REQUEST_URI} ^/flights-deal/canada [NC]
+RewriteRule ^flights-deal/canada$ https://lookflydesk.com/flights-deal/Canada [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/flights-deal/europe [NC]
+RewriteRule ^flights-deal/europe$ https://lookflydesk.com/flights-deal/Europe [R=301,L]
+# End redirections

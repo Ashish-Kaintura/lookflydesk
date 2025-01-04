@@ -1,0 +1,19 @@
+/* Hide the dropdown menus by default */
+.dropdown-menu {
+    display: none;
+  }
+  
+  /* Show dropdown when parent is hovered */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+.subdropdown-menu {
+    display: none;
+  }
+  
+  /* Show dropdown when parent is hovered */
+  .subdropdown:hover .subdropdown-menu {
+    display: block;
+  }
+  
